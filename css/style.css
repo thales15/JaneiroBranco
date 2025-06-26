@@ -1,0 +1,400 @@
+:root {
+    --Cor1: #F4F4F2;
+    --Cor2: #ffbd59;
+    --Cor3: #BBBFCA;
+    --Cor4: #1b2021;
+    --PaddingSections: 25px;
+    --Opacidade: 0.651;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--Cor4);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+section {
+    padding: var(--PaddingSections);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: var(--Cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    transition: 1s;
+}
+
+.navbar.fixa {
+    opacity: 0.5;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.titulo-navbar {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.img-navbar {
+    width: 10%;
+    height: auto;
+}
+
+.button-navbar {
+    display: none;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    transition: 0.6s ease-in-out;
+}
+.button-navbar.ativo {
+    transform: rotate(90deg);
+  }
+
+.lista-navbar {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--Cor4);
+}
+
+.links:hover {
+    color: var(--Cor2);
+    text-shadow: 1px 1px 2px var(--Cor4);
+    border-bottom: 1px solid var(--Cor2);
+}
+
+
+.oqueé {
+    background-color: var(--Cor1);
+}
+
+.titulo {
+    font-size: 50px;
+    color: var(--Cor2);
+    text-shadow: 2px 2px 2px var(--Cor4);
+    margin-bottom: 25px;
+}
+
+.titulo.janeiro {
+    border-style: double;
+    font-size: 80px;
+    justify-self: center;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.escrita-oquee {
+    margin-right: 10rem;
+    width: 90%;
+}
+
+.escrita-oquee .texto-oquee {
+    font-size: 30px;
+    line-height: 1.5;
+
+}
+
+
+.transtornos {
+    background-color: var(--Cor3);
+}
+
+.flex.transtorno {
+    gap: 50px;
+}
+
+.flex.transtorno .titulo {
+    width: 50%;
+}
+
+.titulo.transtornos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.ul-transtornos {
+    display: flex;
+    gap: 100px;
+}
+
+.lista-transtornos {
+    line-height: 1.5;
+}
+
+.transtornos {
+    font-size: 20px;
+}
+
+
+.dados {
+    background-color: var(--Cor4);
+}
+
+.flex.dados {
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.cards {
+    box-sizing: border-box;
+    background-color: var(--Cor1);
+    width: 17rem;
+    border: 5px solid var(--Cor2);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.valorCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.valorCard p {
+    font-size: 30px;
+}
+
+.textoCard {
+    font-size: 25px;
+}
+
+
+.prevenção {
+    background-color: var(--Cor1);
+}
+
+.prevenção .titulo {
+    text-align: center;
+}
+
+.prevencoes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.imagem-prevencao {
+    box-sizing: border-box;
+    border: 1px solid var(--Cor4);
+    max-width: 40%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+
+.img-prevencao {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+
+}
+
+.escrita-prevencao {
+    width: 40%;
+    font-size: 25px;
+}
+
+.subtitulo-prevencao {
+    font-size: 40px;
+    color: var(--Cor2);
+    text-shadow: 1px 1px 2px var(--Cor4);
+    margin-bottom: 10px;
+    border-left: 1px solid var(--Cor2);
+    border-bottom: 1px solid var(--Cor2);
+    padding: 10px;
+}
+
+
+.footer {
+    background-color: var(--Cor4);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--Cor1);
+}
+
+.texto-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    width: 50px;
+    height: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .button-navbar {
+        display: block;
+    }
+
+    .navbar.fixa {
+    opacity: 1;
+}
+
+    .lista-navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--Cor3);
+        display: none;
+        padding: 10px 0;
+        text-align: center;
+
+    }
+
+    .lista-navbar.show {
+        display: flex;
+
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+
+    .titulo.janeiro {
+        font-size: 70px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .escrita-oquee {
+        margin-right: 0;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .escrita-oquee .texto-oquee {
+        font-size: 25px;
+    }
+
+    .flex.transtorno {
+        gap: 0;
+    }
+
+    .flex.transtorno .titulo.transtornos {
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .titulo.transtornos .titulo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ul-transtornos {
+        display: flex;
+        gap: 100px;
+
+        justify-content: center;
+    }
+
+
+
+    .flex.dados {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        margin-bottom: 25px;
+    }
+
+    .prevenção .titulo {
+        text-align: center;
+    }
+
+    
+
+
+}
+
+@media (max-width: 576px){
+    .ul-transtornos {
+        flex-direction: column;
+        gap: 0;
+    }
+    .lista-transtornos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .prevencoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .prevencoes.invertida {
+        flex-direction: column-reverse;
+    }
+    .escrita-prevencao {
+        width: 100%;
+        text-align: center;
+    }
+    .imagem-prevencao {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+}
